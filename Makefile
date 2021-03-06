@@ -96,7 +96,7 @@ docker:
 	sudo systemctl enable docker.service
 	sudo systemctl start docker.service
 
-essential: init base ssh dropbox git 
+essential: init base git ssh dropbox 
 optional:  zsh fonts fcitx vim tlp \
 	termite urxvt xterm tools firefox \
 	thunderbird LaTeX docker gocryptfs
