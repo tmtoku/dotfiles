@@ -91,8 +91,6 @@ docker:
 	sudo systemctl start docker.service
 
 essential: yay ssh dropbox 
-basic: init
-optional:  zsh fonts fcitx vim tlp \
-	termite urxvt xterm tools firefox \
-	thunderbird LaTeX docker gocryptfs
+basic: zsh fonts fcitx vim tlp termite urxvt xterm tools init
+optional: thunderbird LaTeX docker gocryptfs
 
