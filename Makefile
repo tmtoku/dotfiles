@@ -3,9 +3,13 @@ init:
 	ln -vsf ${PWD}/.envs ${HOME}/.envs
 	ln -vsf ${PWD}/.xprofile ${HOME}/.xprofile
 
+base:
+	sudo pacman -S --noconfirm --needed base-devel
+	sudo pacman -S --noconfirm yay
+
 tools:
 	sudo pacman -S --noconfirm \
-		yay fzf bitwarden nitrogen evince poppler-data \
+		fzf bitwarden nitrogen evince poppler-data \
 		neofetch gcc gdb gnuplot discord
 	yay -S downgrade slack-desktop zoom teams
 
