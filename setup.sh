@@ -17,8 +17,8 @@ sudo pacman-mirrors --geoip && sudo pacman -Syu && paccache -ruk0
 # Install essential packages
 make essential
 
+# Reboot
+# sudo shutdown -r now
+
 # Change the default shell
 # chsh -s $(which zsh)
-
-# Reboot
-sudo shutdown -r now
