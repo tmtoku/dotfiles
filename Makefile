@@ -2,6 +2,7 @@ init:
 	ln -vsf ${PWD}/.aliases ${HOME}/.aliases
 	ln -vsf ${PWD}/.envs ${HOME}/.envs
 	ln -vsf ${PWD}/.xprofile ${HOME}/.xprofile
+	ln -vsf ${PWD}/.gitconfig ${HOME}/.gitconfig
 
 yay:
 	sudo pacman -S --noconfirm --needed base-devel
@@ -33,10 +34,6 @@ tlp:
 	sudo pacman -S --noconfirm tlp
 	sudo ln -vsf ${PWD}/tlp.conf /etc/default/tlp.conf
 	systemctl enable tlp.service
-
-git:
-	sudo pacman -S --noconfirm git
-	ln -vsf ${PWD}/.gitconfig ${HOME}/.gitconfig
 
 fonts:
 	sudo pacman -S --noconfirm ttf-meslo-nerd-font-powerlevel10k
@@ -96,7 +93,7 @@ docker:
 	sudo systemctl enable docker.service
 	sudo systemctl start docker.service
 
-essential: init yay git ssh dropbox 
+essential: init yay ssh dropbox 
 optional:  zsh fonts fcitx vim tlp \
 	termite urxvt xterm tools firefox \
 	thunderbird LaTeX docker gocryptfs
