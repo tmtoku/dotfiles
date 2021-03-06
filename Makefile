@@ -20,8 +20,11 @@ ssh:
 
 dropbox:
 	yay -S dropbox
+	dropbox
+
+gocryptfs:
 	sudo pacman -S gocryptfs
-	mkdir -p ${HOME}/Dropbox/encrypted
+	# mkdir -p ${HOME}/Dropbox/encrypted
 	gocryptfs -init ${HOME}/Dropbox/encrypted
 	mkdir -p ${HOME}/private
 	gocryptfs ${HOME}/Dropbox/encrypted ${HOME}/private
@@ -96,5 +99,5 @@ docker:
 essential: init base ssh dropbox git 
 optional:  zsh fonts fcitx vim tlp \
 	termite urxvt xterm tools firefox \
-	thunderbird LaTeX docker 
+	thunderbird LaTeX docker gocryptfs
 
