@@ -3,7 +3,7 @@ init:
 	ln -vsf ${PWD}/.envs ${HOME}/.envs
 	ln -vsf ${PWD}/.xprofile ${HOME}/.xprofile
 
-base:
+yay:
 	sudo pacman -S --noconfirm --needed base-devel
 	sudo pacman -S --noconfirm yay
 
@@ -96,7 +96,7 @@ docker:
 	sudo systemctl enable docker.service
 	sudo systemctl start docker.service
 
-essential: init base git ssh dropbox 
+essential: init yay git ssh dropbox 
 optional:  zsh fonts fcitx vim tlp \
 	termite urxvt xterm tools firefox \
 	thunderbird LaTeX docker gocryptfs
