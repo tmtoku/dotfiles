@@ -10,7 +10,7 @@ yay:
 
 tools:
 	sudo pacman -S --noconfirm \
-		fzf bitwarden nitrogen evince poppler-data \
+		fzf nitrogen evince poppler-data \
 		neofetch gcc gdb gnuplot discord
 	yay -S downgrade slack-desktop zoom teams
 
