@@ -78,9 +78,6 @@ termite:
 	mkdir -p ${HOME}/.config/termite
 	ln -vsf ${PWD}/.config/termite/config ${HOME}/.config/termite/config
 
-firefox:
-	sudo pacman -S --noconfirm firefox
-
 thunderbird:
 	sudo pacman -S --noconfirm thunderbird
 
