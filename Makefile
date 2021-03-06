@@ -66,10 +66,12 @@ vim:
 urxvt:
 	sudo pacman -S --noconfirm rxvt-unicode urxvt-perls
 	ln -vsf ${PWD}/.Xresources ${HOME}/.Xresources
+	xrdb -merge ${HOME}/.Xresources
 
 xterm:
 	sudo pacman -S --noconfirm xterm
 	ln -vsf ${PWD}/.Xresources ${HOME}/.Xresources
+	xrdb -merge ${HOME}/.Xresources
 
 termite:
 	sudo pacman -S --noconfirm termite
