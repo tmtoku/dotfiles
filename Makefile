@@ -91,7 +91,8 @@ docker:
 	sudo systemctl enable docker.service
 	sudo systemctl start docker.service
 
-essential: init tools git ssh fonts fcitx zsh vim
-optional: dropbox tlp termite urxvt xterm \
-	firefox thunderbird LaTeX docker
+essential: init base ssh dropbox git 
+optional:  zsh fonts fcitx vim tlp \
+	termite urxvt xterm tools firefox \
+	thunderbird LaTeX docker 
 
