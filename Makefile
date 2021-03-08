@@ -60,6 +60,7 @@ zsh:
 
 vim:
 	sudo pacman -S --noconfirm gvim
+	sudo pacman -S --noconfirm libz3
 	ln -vsf ${PWD}/.vimrc ${HOME}/.vimrc
 	ln -vsf ${PWD}/.vim ${HOME}/.vim
 
