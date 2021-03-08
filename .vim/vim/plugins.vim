@@ -21,6 +21,14 @@ Plug 'tpope/vim-commentary'
 " Delete/Change/Add surroundings
 Plug 'tpope/vim-surround'
 
+" Language servers for vim
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
+
+" Auto-completion
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+
 call plug#end()
 
 " Automatically install missing plugins on startup

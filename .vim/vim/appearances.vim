@@ -4,6 +4,9 @@
 set number	
 set numberwidth=4
 
+" Always draw the signcolumn
+set signcolumn=yes
+
 " Wrap lines
 set wrap
 
