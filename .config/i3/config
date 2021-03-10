@@ -251,8 +251,8 @@ exec --no-startup-id feh --bg-scale /home/tom/Downloads/girl_twilight_clouds_192
 exec_always --no-startup-id picom -bc
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-# new_window pixel 1
-new_window normal
+new_window pixel 1
+# new_window normal
 new_float normal
 
 # Hide borders
