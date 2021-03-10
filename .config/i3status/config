@@ -8,29 +8,28 @@
 
 general {
         colors = true
-        interval = 5
+        interval = 10
 }
 
-order += "wireless"
 order += "battery all"
-order += "disk /"
+order += "cpu_usage"
 order += "memory"
 order += "tztime local"
 
 battery all {
-        format = "%status %percentage %remaining"
+        format = "[BAT %percentage %remaining]"
 }
 
-disk "/" {
-        format = "%avail"
+cpu_usage {
+  format = "[CPU %usage]"
 }
 
 memory {
-        format = "%used | %available"
+        format = "[MEMORY %used / %available]"
         threshold_degraded = "1G"
         format_degraded = "MEMORY < %available"
 }
 
 tztime local {
-        format = "%Y-%m-%d %H:%M:%S"
+        format = "%Y-%m-%d %H:%M"
 }
