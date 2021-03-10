@@ -44,6 +44,9 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec termite
 
+# start a web browser
+bindsym $mod+F2 exec firefox
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -248,17 +251,15 @@ exec --no-startup-id feh --bg-scale /home/tom/Downloads/girl_twilight_clouds_192
 exec_always --no-startup-id picom -bc
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-new_window pixel 1
+# new_window pixel 1
+new_window normal
 new_float normal
 
 # Hide borders
 hide_edge_borders none
 
-# Start Applications
-bindsym $mod+F2 exec firefox
-
 # Set inner/outer gaps
-gaps inner 5
+gaps inner 6
 gaps outer -2
 
 # Smart gaps (gaps used if only more than one container on the workspace)
