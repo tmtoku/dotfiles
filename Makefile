@@ -81,10 +81,8 @@ termite:
 
 i3wm:
 	sudo pacman -S --noconfirm i3-gaps i3status feh jq picom
-	mkdir -p ${HOME}/.config/i3
-	ln -vsf ${PWD}/.config/i3/config ${HOME}/.config/i3/config
-	mkdir -p ${HOME}/.config/i3status
-	ln -vsf ${PWD}/.config/i3status/config ${HOME}/.config/i3status/config
+	ln -vsf ${PWD}/.config/i3 ${HOME}/.config/i3
+	ln -vsf ${PWD}/.config/i3status ${HOME}/.config/i3status
 
 thunderbird:
 	sudo pacman -S --noconfirm thunderbird

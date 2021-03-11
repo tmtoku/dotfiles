@@ -186,9 +186,6 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-# set wallpaper
-exec --no-startup-id feh --bg-scale /home/tom/Downloads/girl_twilight_clouds_1920x1080.jpg
-
 
 #############################################################################################
 ### applications keyboard shortcuts
@@ -244,6 +241,14 @@ smart_gaps on
 # Smart borders (draw borders around container only if it is not the only container on this workspace) 
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
 smart_borders on
+
+
+#############################################################################################
+### feh
+#############################################################################################
+
+# set wallpaper
+exec_always --no-startup-id ${HOME}/.config/i3/i3feh.sh
 
 
 #############################################################################################
