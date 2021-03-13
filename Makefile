@@ -80,9 +80,13 @@ termite:
 	ln -vsf ${PWD}/.config/termite/config ${HOME}/.config/termite/config
 
 i3wm:
-	sudo pacman -S --noconfirm i3-gaps i3status feh jq picom
+	sudo pacman -S --noconfirm i3-gaps i3status feh jq
 	ln -vsf ${PWD}/.config/i3 ${HOME}/.config/i3
 	ln -vsf ${PWD}/.config/i3status ${HOME}/.config/i3status
+
+picom:
+	sudo pacman -S --noconfirm picom
+	ln -vsf ${PWD}/.config/picom.conf ${HOME}/.config/picom.conf
 
 thunderbird:
 	sudo pacman -S --noconfirm thunderbird
@@ -98,6 +102,6 @@ docker:
 	sudo systemctl start docker.service
 
 essential: yay ssh dropbox 
-basic: zsh fonts fcitx vim tlp termite urxvt xterm tools i3wm init
+basic: zsh fonts fcitx vim tlp termite urxvt xterm tools i3wm picom init
 optional: thunderbird LaTeX docker gocryptfs
 

@@ -256,7 +256,7 @@ exec_always --no-startup-id ${HOME}/.config/i3/i3feh.sh
 #############################################################################################
 
 # compositor for transparency
-exec_always --no-startup-id picom -bc
+exec_always --no-startup-id picom -bc --config ${HOME}/.config/picom.conf
 
 
 #############################################################################################
