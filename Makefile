@@ -89,6 +89,7 @@ thunderbird:
 
 LaTeX:
 	sudo pacman -S --noconfirm texlive-langjapanese texlive-most
+	sudo pacman -S --noconfirm kile
 
 docker:
 	sudo pacman -S --noconfirm docker docker-compose
