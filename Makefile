@@ -38,7 +38,7 @@ tlp:
 fonts:
 	sudo pacman -S --noconfirm ttf-meslo-nerd-font-powerlevel10k
 	sudo pacman -S --noconfirm adobe-source-han-sans-jp-fonts
-	yay -S ttf-cica
+	yay -S ttf-cica ttf-times-new-roman
 	mkdir ${PWD}/FantasqueSansMono
 	cd FantasqueSansMono \
 	&& curl -L -o FantasqueSansMono.tar.gz \
