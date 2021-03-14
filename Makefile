@@ -101,7 +101,12 @@ docker:
 	sudo systemctl enable docker.service
 	sudo systemctl start docker.service
 
+python:
+	sudo pacman -S --noconfirm python-pip
+	pip install --user --upgrade pip
+	pip install --user matplotlib
+
 essential: yay ssh dropbox 
 basic: zsh fonts fcitx vim tlp termite urxvt xterm tools i3wm picom init
-optional: thunderbird LaTeX docker gocryptfs
+optional: thunderbird LaTeX docker python gocryptfs
 
