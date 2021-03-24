@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =4
-let g:netrw_dirhist_4='/home/tom/work/diary'
-let g:netrw_dirhist_3='/home/tom/.config/termite'
-let g:netrw_dirhist_2='/usr/share/zsh'
-let g:netrw_dirhist_1='/home/tom/.config/termite'
