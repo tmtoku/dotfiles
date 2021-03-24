@@ -29,6 +29,9 @@ Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
+" Insert/Delete brakets, parens, quotes in pair
+Plug 'jiangmiao/auto-pairs'
+
 call plug#end()
 
 " Automatically install missing plugins on startup
