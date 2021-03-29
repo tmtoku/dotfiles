@@ -7,8 +7,8 @@ set numberwidth=4
 " Always draw the signcolumn
 set signcolumn=yes
 
-" Wrap lines
-set wrap
+" Don't wrap lines
+set nowrap
 
 " Enable filetype specific plugins and auto-indenting
 if has('filetype')
@@ -19,8 +19,8 @@ endif
 set t_Co=256
 set termguicolors
 set background=dark
-" colorscheme solarized8
-colorscheme molokai
+colorscheme solarized8_high
+" colorscheme molokai
 set cursorline
 
 " Enable Syntax highlighting
