@@ -66,7 +66,7 @@ URxvt*metaSendsEscape: true
 ! appearance
 URxvt*geometry: 90x30
 URxvt*depth: 32
-URxvt*transparent: true
+URxvt*transparent: false
 URxvt*shading: 30
 URxvt*scrollBar: false
 URxvt*scrollTtyOutput: false
