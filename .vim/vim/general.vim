@@ -27,3 +27,11 @@ set lazyredraw
 " Time out on mapping after 'timeoutlen' milliseconds
 " Time out on key codes after 'ttimeoutlen' milliseconds
 set timeout timeoutlen=1000 ttimeoutlen=10
+
+
+" Autocommands -------------------------
+
+augroup lsp
+    autocmd!
+    autocmd BufWritePre <buffer> LspDocumentFormatSync
+augroup END
