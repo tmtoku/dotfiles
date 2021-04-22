@@ -104,7 +104,10 @@ docker:
 python:
 	sudo pacman -S --noconfirm python-pip
 	pip install --user --upgrade pip
+	pip install --user h5py
 	pip install --user matplotlib
+	pip install --user numpy
+	pip install --user pandas
 
 essential: yay ssh dropbox 
 basic: zsh fonts fcitx vim tlp termite urxvt xterm tools i3wm picom init
