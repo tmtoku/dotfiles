@@ -31,7 +31,4 @@ set timeout timeoutlen=1000 ttimeoutlen=10
 
 " Autocommands -------------------------
 
-augroup lsp
-    autocmd!
-    autocmd BufWritePre <buffer> LspDocumentFormatSync
-augroup END
+autocmd BufWritePre <buffer> LspDocumentFormatSync
