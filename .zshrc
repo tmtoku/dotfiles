@@ -16,6 +16,8 @@ PLUGIN_HOME=${HOME}/.zsh/plugins
 
 [[ -f ${PLUGIN_HOME}/p10k.zsh ]] && source ${PLUGIN_HOME}/p10k.zsh
 
+[[ -f ${ZSH_HOME}/general.zsh ]] && source ${ZSH_HOME}/general.zsh
+
 [[ -f ${ZSH_HOME}/history.zsh ]] && source ${ZSH_HOME}/history.zsh
 
 [[ -f ${ZSH_HOME}/completion.zsh ]] && source ${ZSH_HOME}/completion.zsh
