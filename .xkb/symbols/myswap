@@ -1,0 +1,12 @@
+partial modifier_keys
+xkb_symbols "swapkeys" {
+    replace key <CAPS> { [ Escape ] };
+    replace key <ESC> { [ Caps_Lock] };
+
+    replace key <LFSH> { [ Return ] };
+    replace key <MUHE> { [ Shift_L ] };
+
+    replace key <HENK> { [ Control_R ] };
+    replace key <HKTG> { [ BackSpace ] };
+};
+

@@ -3,6 +3,7 @@ init:
 	ln -vsf ${PWD}/.envs ${HOME}/.envs
 	ln -vsf ${PWD}/.xprofile ${HOME}/.xprofile
 	ln -vsf ${PWD}/.gitconfig ${HOME}/.gitconfig
+	ln -vsf ${PWD}/.xkb ${HOME}/.xkb
 
 yay:
 	sudo pacman -S --noconfirm --needed base-devel
