@@ -1,8 +1,9 @@
 # History Settings -------------------------
 
-HISTFILE=${HOME}/Dropbox/zsh/.zsh_history
-HISTSIZE=1000000
-SAVEHIST=1000000
+export HISTFILE=${HOME}/Dropbox/zsh/.zsh_history
+export HISTSIZE=1000000
+export HISTFILESIZE=1000000
+export SAVEHIST=1000000
 
 zshaddhistory() {
     local line=${1%%$'\n'}
