@@ -12,7 +12,8 @@ yay:
 tools:
 	sudo pacman -S --noconfirm \
 		downgrade fzf evince poppler-data \
-		neofetch gcc gdb gnuplot
+		neofetch xorg-xev gcc openmp gdb \
+		valgrind perf gnuplot
 
 communication:
 	sudo pacman -S --noconfirm discord
@@ -67,6 +68,10 @@ vim:
 	sudo pacman -S --noconfirm libz3
 	ln -vsf ${PWD}/.vimrc ${HOME}/.vimrc
 	ln -vsf ${PWD}/.vim ${HOME}/.vim
+
+tmux:
+	sudo pacman -S --noconfirm tmux
+	ln -vsf ${PWD}/.tmux.conf ${HOME}/.tmux.conf
 
 urxvt:
 	sudo pacman -S --noconfirm rxvt-unicode urxvt-perls
