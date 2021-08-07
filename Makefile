@@ -11,9 +11,12 @@ yay:
 
 tools:
 	sudo pacman -S --noconfirm \
-		fzf evince poppler-data \
-		neofetch gcc gdb gnuplot discord
-	yay -S downgrade slack-desktop zoom teams
+		downgrade fzf evince poppler-data \
+		neofetch gcc gdb gnuplot
+
+communication:
+	sudo pacman -S --noconfirm discord
+	yay -S slack-desktop zoom teams
 
 ssh:
 	sudo pacman -S --noconfirm openssh
@@ -111,6 +114,6 @@ python:
 	pip install --user pandas
 
 essential: yay ssh dropbox 
-basic: zsh fonts fcitx vim tlp termite urxvt xterm tools i3wm picom init
+basic: zsh fonts fcitx vim tlp termite urxvt xterm tools communication i3wm picom init
 optional: thunderbird LaTeX docker python gocryptfs
 
