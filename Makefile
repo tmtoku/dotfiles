@@ -9,6 +9,11 @@ yay:
 	sudo pacman -S --noconfirm --needed base-devel
 	sudo pacman -S --noconfirm yay
 
+snap:
+	sudo pacman -S --noconfirm snapd
+	sudo systemctl enable --now snapd.socket
+	sudo ln -s /var/lib/snapd/snap /snap
+
 tools:
 	sudo pacman -S --noconfirm \
 		downgrade fzf evince poppler-data \
@@ -122,7 +127,7 @@ Rust:
 	rustup update
 	rustup component add rls rust-analysis rust-src
 
-essential: yay ssh dropbox 
+essential: yay snap ssh dropbox
 basic: zsh fonts fcitx vim tlp termite urxvt xterm tools communication i3wm picom init
 optional: thunderbird LaTeX docker python gocryptfs
 
