@@ -17,7 +17,6 @@ tools:
 
 communication:
 	sudo pacman -S --noconfirm discord
-	yay -S slack-desktop zoom teams
 
 ssh:
 	sudo pacman -S --noconfirm openssh
