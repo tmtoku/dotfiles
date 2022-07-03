@@ -118,6 +118,11 @@ python:
 	pip install --user numpy
 	pip install --user pandas
 
+Rust:
+	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+	rustup update
+	rustup component add rls rust-analysis rust-src
+
 essential: yay ssh dropbox 
 basic: zsh fonts fcitx vim tlp termite urxvt xterm tools communication i3wm picom init
 optional: thunderbird LaTeX docker python gocryptfs

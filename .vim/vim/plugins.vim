@@ -29,6 +29,9 @@ Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
+" Rust
+Plug 'rust-lang/rust.vim'
+
 call plug#end()
 
 " Automatically install missing plugins on startup
