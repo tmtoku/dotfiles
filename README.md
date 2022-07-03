@@ -12,7 +12,7 @@ git clone https://github.com/qtmm/dotfiles.git
 cd dotfiles
 # Install 'essential' packages
 make essential
-# After some settings, install 'basic' packages
+# Install 'basic' packages
 make basic
 # Additional settings and reboot
 ./setup.sh
