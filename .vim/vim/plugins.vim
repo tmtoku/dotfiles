@@ -16,7 +16,7 @@ Plug 'tomasr/molokai'
 Plug 'itchyny/lightline.vim'
 
 " Comment Out
-Plug 'tpope/vim-commentary'
+Plug 'tomtom/tcomment_vim'
 
 " Delete/Change/Add surroundings
 Plug 'tpope/vim-surround'
