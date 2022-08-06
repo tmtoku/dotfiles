@@ -19,7 +19,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'tomtom/tcomment_vim'
 
 " Delete/Change/Add surroundings
-Plug 'tpope/vim-surround'
+Plug 'machakann/vim-sandwich'
 
 " Language servers for vim
 Plug 'prabirshrestha/vim-lsp'
