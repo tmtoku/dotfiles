@@ -32,13 +32,6 @@ dropbox:
 	yay -S dropbox
 	dropbox
 
-gocryptfs:
-	sudo pacman -S gocryptfs
-	# mkdir -p ${HOME}/Dropbox/encrypted
-	gocryptfs -init ${HOME}/Dropbox/encrypted
-	mkdir -p ${HOME}/private
-	gocryptfs ${HOME}/Dropbox/encrypted ${HOME}/private
-
 tlp:
 	sudo pacman -S --noconfirm tlp
 	sudo ln -vsf ${PWD}/tlp.conf /etc/default/tlp.conf
@@ -64,8 +57,7 @@ zsh:
 	ln -vsf ${PWD}/.zshrc ${HOME}/.zshrc
 	ln -vsf ${PWD}/.zsh ${HOME}/.zsh
 	mkdir -p ${HOME}/.zsh/.zinit
-	git clone \
-		https://github.com/zdharma/zinit.git ${HOME}/.zsh/.zinit/bin
+	#git clone https://github.com/zdharma/zinit.git ${HOME}/.zsh/.zinit/bin
 
 vim:
 	sudo pacman -S --noconfirm gvim
@@ -128,6 +120,6 @@ Rust:
 	rustup component add rls rust-analysis rust-src
 
 essential: yay snap ssh dropbox
-basic: zsh fonts fcitx vim tlp termite urxvt xterm tools communication i3wm picom init
-optional: thunderbird LaTeX docker python gocryptfs
+basic: zsh fonts fcitx vim tlp urxvt xterm tools communication i3wm picom init
+optional: thunderbird LaTeX docker python
 
