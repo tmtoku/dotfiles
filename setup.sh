@@ -17,15 +17,21 @@ EndSection
 ###################
 
 # For KDE and i3wm #####
-sudo rm /usr/share/xsessions/i3*
+mkdir -p ${HOME}/.config/systemd/user
 echo '
-[Desktop Entry]
-Type=XSession
-Exec=env KDEWM=/usr/bin/i3 /usr/bin/startplasma-x11
-DesktopNames=KDE
-Name=Plasma with i3
-Comment=Plasma with i3
-' | sudo tee /usr/share/xsessions/plasma-i3.desktop
+[Unit]
+Description=Launch Plasma with i3
+Before=plasma-workspace.target
+
+[Service]
+ExecStart=/usr/bin/i3
+Restart=on-failure
+
+[Install]
+WantedBy=plasma-workspace.target
+' | sudo tee ${HOME}/.config/systemd/user/plasma-i3.service
+systemctl mask plasma-kwin_x11.service --user
+systemctl enable plasma-i3 --user
 ###################
 
 # Adjust the clock
