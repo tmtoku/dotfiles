@@ -36,6 +36,7 @@ systemctl enable plasma-i3 --user
 
 # Adjust the clock
 sudo timedatectl set-ntp true
+sudo hwclock -D --systohc --localtime
 
 # Change the default shell
 chsh -s $(which zsh)
