@@ -10,6 +10,7 @@ set fileencoding=utf-8
 " Enable the mouse for normal mode and visual mode
 if has('mouse')
   set mouse=nv
+  set ttymouse=sgr
 endif
 
 " Disable all bells

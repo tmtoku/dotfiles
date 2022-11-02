@@ -84,6 +84,11 @@ termite:
 	mkdir -p ${HOME}/.config/termite
 	ln -vsf ${PWD}/.config/termite/config ${HOME}/.config/termite/config
 
+alacritty:
+	sudo pacman -S --noconfirm alacritty
+	mkdir -p ${HOME}/.config/alacritty
+	ln -vsf ${PWD}/.config/alacritty/alacritty.yml ${HOME}/.config/alacritty/alacritty.yml
+
 i3wm:
 	sudo pacman -S --noconfirm i3-gaps i3status feh jq
 	ln -vsf ${PWD}/.config/i3 ${HOME}/.config/i3

@@ -1,0 +1,49 @@
+colors:
+  # Default colors
+  primary:
+    background: '0x000000'
+    foreground: '0xa8a8a8'
+
+  # Normal colors
+  normal:
+    black:   '0x000000'
+    red:     '0xa80000'
+    green:   '0x6dfedf'
+    yellow:  '0xf8fc50'
+    blue:    '0x5054f8'
+    magenta: '0xa800a8'
+    cyan:    '0x00a8a8'
+    white:   '0xa8a8a8'
+
+  # Bright colors
+  bright:
+    black:   '0x6a6a6a'
+    red:     '0xf85450'
+    green:   '0x50fc50'
+    yellow:  '0xf3f99d'
+    blue:    '0x268bd2'
+    magenta: '0xf854f8'
+    cyan:    '0x2de0a7'
+    white:   '0xf8fcf8'
+
+font:
+  size: 16
+
+  normal:
+    family: Fantasque Sans Mono
+    style: Regular
+
+  bold:
+    family: Fantasque Sans Mono
+    style: Bold
+
+  italic:
+    family: Fantasque Sans Mono
+    style: Italic
+
+  bold_italic:
+    family: Fantasque Sans Mono
+    style: Bold Italic
+
+window:
+  decorations: none

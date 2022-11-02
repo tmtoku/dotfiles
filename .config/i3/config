@@ -192,10 +192,10 @@ exec --no-startup-id nm-applet
 #############################################################################################
 
 # terminal
-bindsym $mod+Return exec --no-startup-id urxvt;focus
+bindsym $mod+Return exec --no-startup-id $TERMINAL;focus
 
 # start a web browser
-bindsym $mod+F2 exec --no-startup-id firefox;focus
+bindsym $mod+F2 exec --no-startup-id $BROWSER;focus
 
 
 #############################################################################################
