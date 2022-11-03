@@ -15,10 +15,10 @@ snap:
 	sudo ln -s /var/lib/snapd/snap /snap
 
 tools:
-	sudo pacman -S --noconfirm \
-		downgrade fzf evince poppler-data \
-		neofetch xorg-xev gcc openmp gdb \
-		valgrind perf gnuplot
+	sudo pacman -S --noconfirm\
+		downgrade fzf evince poppler-data neofetch xorg-xev gnuplot\
+		gcc cmake cppcheck gdb valgrind perf openmp openmpi\
+		jdk-openjdk
 
 communication:
 	sudo pacman -S --noconfirm discord
@@ -42,9 +42,9 @@ fonts:
 	sudo pacman -S --noconfirm adobe-source-han-sans-jp-fonts
 	yay -S ttf-cica ttf-times-new-roman
 	mkdir ${PWD}/FantasqueSansMono
-	cd FantasqueSansMono \
-	&& curl -L -o FantasqueSansMono.tar.gz \
-		https://github.com/belluzj/fantasque-sans/releases/download/v1.8.0/FantasqueSansMono-NoLoopK.tar.gz \
+	cd FantasqueSansMono\
+	&& curl -L -o FantasqueSansMono.tar.gz\
+		https://github.com/belluzj/fantasque-sans/releases/download/v1.8.0/FantasqueSansMono-NoLoopK.tar.gz\
 	&& tar xzf FantasqueSansMono.tar.gz
 	sudo mv FantasqueSansMono /usr/share/fonts/
 

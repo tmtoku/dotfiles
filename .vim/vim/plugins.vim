@@ -18,9 +18,6 @@ Plug 'itchyny/lightline.vim'
 " Comment Out
 Plug 'tomtom/tcomment_vim'
 
-" Delete/Change/Add surroundings
-Plug 'machakann/vim-sandwich'
-
 " Language servers for vim
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
@@ -31,6 +28,9 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
 " Rust
 Plug 'rust-lang/rust.vim'
+
+" C++
+Plug 'octol/vim-cpp-enhanced-highlight'
 
 call plug#end()
 
