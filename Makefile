@@ -74,11 +74,6 @@ urxvt:
 	ln -vsf ${PWD}/.Xresources ${HOME}/.Xresources
 	xrdb -merge ${HOME}/.Xresources
 
-xterm:
-	sudo pacman -S --noconfirm xterm
-	ln -vsf ${PWD}/.Xresources ${HOME}/.Xresources
-	xrdb -merge ${HOME}/.Xresources
-
 termite:
 	sudo pacman -S --noconfirm termite
 	mkdir -p ${HOME}/.config/termite
@@ -93,6 +88,10 @@ i3wm:
 	sudo pacman -S --noconfirm i3-gaps i3status feh jq
 	ln -vsf ${PWD}/.config/i3 ${HOME}/.config/i3
 	ln -vsf ${PWD}/.config/i3status ${HOME}/.config/i3status
+
+rofi:
+	sudo pacman -S --noconfirm rofi
+	ln -vsf ${PWD}/.config/rofi ${HOME}/.config/rofi
 
 picom:
 	sudo pacman -S --noconfirm picom
@@ -125,6 +124,6 @@ Rust:
 	rustup component add rls rust-analysis rust-src
 
 essential: yay snap ssh dropbox
-basic: zsh fonts fcitx vim tlp urxvt xterm tools communication i3wm picom init
+basic: zsh fonts fcitx vim tlp urxvt tools communication i3wm rofi picom init
 optional: thunderbird LaTeX docker python
 
