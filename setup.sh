@@ -40,6 +40,3 @@ sudo hwclock -D --systohc --localtime
 
 # Change the default shell
 chsh -s $(which zsh)
-
-# Reboot
-sudo shutdown -r now
