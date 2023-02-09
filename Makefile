@@ -17,7 +17,7 @@ snap:
 tools:
 	sudo pacman -S --noconfirm\
 		downgrade fzf evince poppler-data neofetch xorg-xev gnuplot\
-		gcc cmake cppcheck gdb valgrind perf openmp openmpi\
+		gcc cmake cppcheck gdb lldb valgrind perf openmp openmpi\
 		jdk-openjdk
 
 communication:
@@ -29,7 +29,7 @@ ssh:
 	chmod 700 ${HOME}/.ssh
 
 dropbox:
-	yay -S dropbox
+	yay -S --noconfirm dropbox
 	dropbox
 
 tlp:
@@ -40,7 +40,7 @@ tlp:
 fonts:
 	sudo pacman -S --noconfirm ttf-meslo-nerd-font-powerlevel10k
 	sudo pacman -S --noconfirm adobe-source-han-sans-jp-fonts
-	yay -S ttf-cica ttf-times-new-roman
+	yay -S --noconfirm ttf-cica ttf-times-new-roman
 	mkdir ${PWD}/FantasqueSansMono
 	cd FantasqueSansMono\
 	&& curl -L -o FantasqueSansMono.tar.gz\
@@ -75,7 +75,7 @@ urxvt:
 	xrdb -merge ${HOME}/.Xresources
 
 termite:
-	sudo pacman -S --noconfirm termite
+	yay -S --noconfirm termite
 	mkdir -p ${HOME}/.config/termite
 	ln -vsf ${PWD}/.config/termite/config ${HOME}/.config/termite/config
 
@@ -124,6 +124,6 @@ Rust:
 	rustup component add rls rust-analysis rust-src
 
 essential: yay snap ssh dropbox
-basic: zsh fonts fcitx vim tlp urxvt tools communication i3wm rofi picom init
-optional: thunderbird LaTeX docker python
+basic: zsh fonts fcitx vim tlp alacritty tools communication i3wm rofi picom init
+optional: urxvt termite thunderbird LaTeX docker python
 
