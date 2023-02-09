@@ -16,12 +16,12 @@ snap:
 
 tools:
 	sudo pacman -S --noconfirm\
-		downgrade fzf evince poppler-data neofetch xorg-xev gnuplot\
-		gcc cmake cppcheck gdb lldb valgrind perf openmp openmpi\
-		jdk-openjdk
+		downgrade fzf evince poppler-data neofetch xorg-xev discord
 
-communication:
-	sudo pacman -S --noconfirm discord
+development:
+	sudo pacman -S --noconfirm\
+		gcc gnuplot cmake cppcheck gdb lldb valgrind perf openmp openmpi\
+		jdk-openjdk
 
 ssh:
 	sudo pacman -S --noconfirm openssh
@@ -124,6 +124,5 @@ Rust:
 	rustup component add rls rust-analysis rust-src
 
 essential: yay snap ssh dropbox
-basic: zsh fonts fcitx vim tlp alacritty tools communication i3wm rofi picom init
-optional: urxvt termite thunderbird LaTeX docker python
-
+basic: zsh fonts fcitx vim alacritty i3wm rofi picom init
+optional: tools development tlp urxvt termite thunderbird LaTeX docker python
