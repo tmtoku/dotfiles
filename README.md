@@ -21,7 +21,7 @@ Prerequisite: You should download Manjaro Linux (Plasma, Minimal) from [the offi
 1. Download this repository
    ```sh
    cd ${HOME}
-   git clone https://github.com/qtmm/dotfiles.git
+   git clone https://github.com/tmtoku/dotfiles.git
    cd dotfiles
    ```
 1. Install 'essential' packages
