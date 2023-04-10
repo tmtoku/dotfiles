@@ -27,7 +27,7 @@ colors:
     white:   '0xf8fcf8'
 
 font:
-  size: 16
+  size: 18
 
   normal:
     family: Fantasque Sans Mono
