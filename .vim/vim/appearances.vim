@@ -22,7 +22,6 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set termguicolors
 set background=dark
 colorscheme solarized8_high
-" colorscheme molokai
 set cursorline
 
 " Enable Syntax highlighting

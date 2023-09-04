@@ -7,16 +7,10 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Colorscheme
-Plug 'dracula/vim'
-Plug 'connorholyday/vim-snazzy'
 Plug 'lifepillar/vim-solarized8'
-Plug 'tomasr/molokai'
 
 " Status Line
 Plug 'itchyny/lightline.vim'
-
-" Comment Out
-Plug 'tomtom/tcomment_vim'
 
 " Language servers for vim
 Plug 'prabirshrestha/vim-lsp'
