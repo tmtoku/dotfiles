@@ -1,10 +1,11 @@
 partial modifier_keys
 xkb_symbols "swapkeys" {
-    replace key <CAPS> { [ Escape ] };
-    replace key <ESC> { [ Caps_Lock] };
+    replace key <CAPS> { [ Escape, Escape ] };
 
-    key <MUHE> { [ Control_L ] };
-    key <HENK> { [ Control_R ] };
+    replace key <MUHE> { [ Control_L, Control_L ] };
+    replace key <HENK> { [ Control_R, Control_R ] };
     modifier_map Control { <MUHE>, <HENK> };
-};
 
+    replace key <HKTG> { [ Alt_R, Alt_R ] };
+    modifier_map Mod1 { <HKTG> };
+};
