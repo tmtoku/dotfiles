@@ -1,5 +1,5 @@
 partial modifier_keys
-xkb_symbols "swapkeys" {
+xkb_symbols "key_remap" {
     replace key <CAPS> { [ Escape, Escape ] };
 
     replace key <MUHE> { [ Control_L, Control_L ] };
