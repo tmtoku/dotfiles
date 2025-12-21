@@ -10,9 +10,6 @@ alias egrep='egrep --color=auto'
 alias la='ls -A'
 alias ll='ls -Al'
 
-## df
-alias df='df -hM'
-
 ## free
 alias free='free -h'
 
@@ -22,7 +19,8 @@ alias v='vim'
 ## Package Manager
 alias pinstall='sudo pacman -S'
 alias premove='sudo pacman -Rs'
-alias pupdate='sudo pacman-mirrors --geoip && sudo pacman -Syu && paccache -ruk0'
+alias pupdate='sudo pacman -Syu && paccache -ruk0'
+alias pmirror='sudo pacman-mirrors --continent && sudo pacman -Syyu'
 
 ## Arch User Repository
 alias yay='yay --aur'
