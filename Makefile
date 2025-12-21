@@ -89,6 +89,9 @@ i3wm:
 	ln -vsf ${PWD}/.config/i3 ${HOME}/.config/i3
 	ln -vsf ${PWD}/.config/i3status ${HOME}/.config/i3status
 
+plasma:
+	sudo pacman -S --noconfirm plasma-x11-session
+
 rofi:
 	sudo pacman -S --noconfirm rofi
 	ln -vsf ${PWD}/.config/rofi ${HOME}/.config/rofi
@@ -124,5 +127,5 @@ Rust:
 	rustup component add rls rust-analysis rust-src
 
 essential: yay snap ssh dropbox
-basic: zsh fonts fcitx vim alacritty i3wm rofi picom init
+basic: zsh fonts fcitx vim alacritty i3wm plasma rofi picom init
 optional: tools development tlp urxvt termite thunderbird LaTeX docker python
