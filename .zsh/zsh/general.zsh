@@ -16,4 +16,4 @@ setopt NO_BEEP
 setopt AUTO_CD
 
 # My own keyboard layout
-xkbcomp -I${HOME}/.xkb ${HOME}/.xkb/keymap/mykbd ${DISPLAY} 2> /dev/null
+# xkbcomp -I${HOME}/.xkb ${HOME}/.xkb/keymap/mykbd ${DISPLAY} 2> /dev/null
