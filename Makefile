@@ -16,7 +16,7 @@ snap:
 
 tools:
 	sudo pacman -S --noconfirm\
-		downgrade fzf evince poppler-data neofetch xorg-xev discord
+		downgrade fzf fd ripgrep bat watchexec evince poppler-data fastfetch xorg-xev discord
 
 development:
 	sudo pacman -S --noconfirm\
@@ -64,6 +64,10 @@ vim:
 	sudo pacman -S --noconfirm libz3
 	ln -vsf ${PWD}/.vimrc ${HOME}/.vimrc
 	ln -vsf ${PWD}/.vim ${HOME}/.vim
+
+nvim:
+	sudo pacman -S --noconfirm neovim
+	ln -vsf ${PWD}/.config/nvim ${HOME}/.config/nvim
 
 tmux:
 	sudo pacman -S --noconfirm tmux
@@ -127,5 +131,5 @@ Rust:
 	rustup component add rls rust-analysis rust-src
 
 essential: yay snap ssh dropbox
-basic: zsh fonts fcitx vim alacritty i3wm plasma rofi picom init
+basic: zsh fonts fcitx vim nvim alacritty i3wm plasma rofi picom init
 optional: tools development tlp urxvt termite thunderbird LaTeX docker python

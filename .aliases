@@ -14,7 +14,7 @@ alias ll='ls -Al'
 alias free='free -h'
 
 ## vim
-alias v='vim'
+alias v='nvim'
 
 ## Package Manager
 alias pinstall='sudo pacman -S'

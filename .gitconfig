@@ -14,4 +14,4 @@
     InsteadOf = git@github.com:
 
 [core]
-    editor = vim
+    editor = nvim
