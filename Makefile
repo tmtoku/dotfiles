@@ -70,8 +70,9 @@ nvim:
 	ln -vsf ${PWD}/.config/nvim ${HOME}/.config/nvim
 
 tmux:
-	sudo pacman -S --noconfirm tmux
+	sudo pacman -S --noconfirm tmux xclip
 	ln -vsf ${PWD}/.tmux.conf ${HOME}/.tmux.conf
+	git clone https://github.com/tmux-plugins/tpm ${HOME}/.tmux/plugins/tpm
 
 urxvt:
 	sudo pacman -S --noconfirm rxvt-unicode urxvt-perls
@@ -131,5 +132,5 @@ Rust:
 	rustup component add rls rust-analysis rust-src
 
 essential: yay snap ssh dropbox
-basic: zsh fonts fcitx vim nvim alacritty i3wm plasma rofi picom init
+basic: zsh fonts fcitx vim nvim tmux alacritty i3wm plasma rofi picom init
 optional: tools development tlp urxvt termite thunderbird LaTeX docker python

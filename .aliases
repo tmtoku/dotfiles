@@ -16,6 +16,10 @@ alias free='free -h'
 ## vim
 alias v='nvim'
 
+## SSH
+alias ssh='ssh -Y'
+ssht() { ssh -t "$1" "tmux new-session -A -s ${2:-main}" }
+
 ## Package Manager
 alias pinstall='sudo pacman -S'
 alias premove='sudo pacman -Rs'
