@@ -1,6 +1,7 @@
 [user]
 	name = Tomoyuki Tokuue
 	email = 80094371+tmtoku@users.noreply.github.com
+
 [color]
 	ui = auto
     status = auto
@@ -8,6 +9,9 @@
     branch = auto
     interactive = auto
     grep = auto
+
+[init]
+	defaultBranch = main
 
 [url "github:"]
     InsteadOf = https://github.com/
