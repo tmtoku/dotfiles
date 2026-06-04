@@ -1,2 +1,2 @@
 export BROWSER="/usr/bin/firefox"
-export TERMINAL="/usr/bin/termite"
+export TERMINAL="/usr/bin/ghostty"
