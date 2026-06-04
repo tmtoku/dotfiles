@@ -49,7 +49,11 @@ fonts:
 	sudo mv FantasqueSansMono /usr/share/fonts/
 
 fcitx:
-	sudo pacman -S --noconfirm fcitx-im fcitx-configtool fcitx-mozc
+	sudo pacman -S --noconfirm fcitx5 fcitx5-configtool fcitx5-mozc fcitx5-gtk fcitx5-qt
+	yay -S --noconfirm catppuccin-fcitx5-git
+	mkdir -p ${HOME}/.config/fcitx5/conf
+	ln -vsf ${PWD}/.config/fcitx5/conf/classicui.conf ${HOME}/.config/fcitx5/conf/classicui.conf
+	ln -vsf ${PWD}/.config/fcitx5/config ${HOME}/.config/fcitx5/config
 
 zsh:
 	sudo pacman -S --noconfirm zsh
