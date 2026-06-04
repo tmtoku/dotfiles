@@ -16,7 +16,7 @@ snap:
 
 tools:
 	sudo pacman -S --noconfirm\
-		downgrade fzf fd ripgrep bat watchexec evince poppler-data fastfetch xorg-xev discord
+		downgrade fzf fd ripgrep bat watchexec evince poppler-data fastfetch xorg-xev discord xclip
 
 development:
 	sudo pacman -S --noconfirm\
@@ -74,7 +74,7 @@ nvim:
 	ln -vsf ${PWD}/.config/nvim ${HOME}/.config/nvim
 
 tmux:
-	sudo pacman -S --noconfirm tmux xclip
+	sudo pacman -S --noconfirm tmux
 	ln -vsf ${PWD}/.tmux.conf ${HOME}/.tmux.conf
 	git clone https://github.com/tmux-plugins/tpm ${HOME}/.tmux/plugins/tpm
 
