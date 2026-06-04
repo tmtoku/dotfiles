@@ -6,6 +6,7 @@
 - **Compositor**: picom
 - **Launcher**: Rofi
 - **Shell**: zsh
+- **Terminal**: ghostty
 
 ## Usage
 Prerequisite: You should download Manjaro Linux (Plasma, Minimal) from [the official website](https://manjaro.org/download/)
@@ -24,9 +25,9 @@ Prerequisite: You should download Manjaro Linux (Plasma, Minimal) from [the offi
    git clone https://github.com/tmtoku/dotfiles.git
    cd dotfiles
    ```
-1. Install 'essential' packages
+1. Install 'minimal' packages
    ```sh
-   make essential
+   make minimal
    ```
 1. Install 'basic' packages
    ```sh
@@ -37,7 +38,8 @@ Prerequisite: You should download Manjaro Linux (Plasma, Minimal) from [the offi
    ./setup.sh
    sudo shutdown -r now
    ```
-1. Install 'optional' packages, if necessary
+1. Install 'development' or 'optional' packages, if necessary
    ```sh
+   make development
    make optional
    ```
