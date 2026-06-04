@@ -9,10 +9,6 @@ yay:
 	sudo pacman -S --noconfirm --needed base-devel
 	sudo pacman -S --noconfirm yay
 
-snap:
-	sudo pacman -S --noconfirm snapd
-	sudo systemctl enable --now snapd.socket
-	sudo ln -s /var/lib/snapd/snap /snap
 
 tools:
 	sudo pacman -S --noconfirm\
@@ -20,8 +16,7 @@ tools:
 
 development:
 	sudo pacman -S --noconfirm\
-		gcc gnuplot cmake cppcheck gdb lldb valgrind perf openmp openmpi\
-		jdk-openjdk
+		gcc gnuplot cmake cppcheck gdb lldb valgrind perf openmp openmpi
 
 ssh:
 	sudo pacman -S --noconfirm openssh
@@ -93,10 +88,6 @@ termite:
 	mkdir -p ${HOME}/.config/termite
 	ln -vsf ${PWD}/.config/termite/config ${HOME}/.config/termite/config
 
-alacritty:
-	sudo pacman -S --noconfirm alacritty
-	mkdir -p ${HOME}/.config/alacritty
-	ln -vsf ${PWD}/.config/alacritty/alacritty.yml ${HOME}/.config/alacritty/alacritty.yml
 
 i3wm:
 	sudo pacman -S --noconfirm i3-gaps i3status feh jq
@@ -128,18 +119,13 @@ docker:
 	sudo systemctl start docker.service
 
 python:
-	sudo pacman -S --noconfirm python-pip
-	pip install --user --upgrade pip
-	pip install --user h5py
-	pip install --user matplotlib
-	pip install --user numpy
-	pip install --user pandas
+	sudo pacman -S --noconfirm uv
 
 Rust:
 	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 	rustup update
 	rustup component add rls rust-analysis rust-src
 
-essential: yay snap ssh dropbox
-basic: zsh fonts fcitx vim nvim tmux alacritty i3wm plasma rofi picom init
+essential: yay ssh dropbox
+basic: zsh fonts fcitx vim nvim tmux ghostty i3wm plasma rofi picom init
 optional: tools development tlp urxvt termite thunderbird LaTeX docker python
