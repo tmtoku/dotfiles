@@ -36,7 +36,7 @@ fonts:
 	sudo pacman -S --noconfirm ttf-meslo-nerd-font-powerlevel10k
 	sudo pacman -S --noconfirm adobe-source-han-sans-jp-fonts
 	yay -S --noconfirm ttf-cica ttf-times-new-roman
-	mkdir ${PWD}/FantasqueSansMono
+	mkdir -p ${PWD}/FantasqueSansMono
 	cd FantasqueSansMono\
 	&& curl -L -o FantasqueSansMono.tar.gz\
 		https://github.com/belluzj/fantasque-sans/releases/download/v1.8.0/FantasqueSansMono-NoLoopK.tar.gz\
@@ -123,7 +123,7 @@ python:
 Rust:
 	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 	rustup update
-	rustup component add rls rust-analysis rust-src
+	rustup component add rust-analyzer rust-src
 
 essential: yay ssh dropbox
 basic: zsh fonts fcitx vim nvim tmux ghostty i3wm plasma rofi picom init
