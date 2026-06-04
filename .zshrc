@@ -1,6 +1,8 @@
 # tmux auto-attach
-if [[ -z "${TMUX}" ]] && [[ -z "${NVIM}" ]] && command -v tmux &>/dev/null; then
-    exec tmux new-session
+[[ -o interactive ]] || return
+
+if [[ -z "${TMUX}" ]] && [[ -z "${NVIM}" ]] && [[ -t 0 ]] && [[ -t 1 ]] && command -v tmux &>/dev/null; then
+  exec tmux new-session
 fi
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
