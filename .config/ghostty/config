@@ -1,0 +1,30 @@
+gtk-titlebar = false
+mouse-hide-while-typing = true
+window-padding-x = 4
+window-padding-y = 4
+window-padding-balance = true
+
+font-family = Fantasque Sans Mono
+font-family = MesloLGS NF
+font-size = 18
+background = #000000
+foreground = #a8a8a8
+cursor-style = block
+scrollback-limit = 10000
+
+palette = 0=#000000
+palette = 1=#a80000
+palette = 2=#6dfedf
+palette = 3=#f8fc50
+palette = 4=#5054f8
+palette = 5=#a800a8
+palette = 6=#00a8a8
+palette = 7=#a8a8a8
+palette = 8=#6a6a6a
+palette = 9=#f85450
+palette = 10=#50fc50
+palette = 11=#f3f99d
+palette = 12=#268bd2
+palette = 13=#f854f8
+palette = 14=#2de0a7
+palette = 15=#f8fcf8

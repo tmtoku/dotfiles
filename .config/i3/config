@@ -191,7 +191,7 @@ exec --no-startup-id nm-applet
 ### applications keyboard shortcuts
 #############################################################################################
 
-set $TERMINAL /usr/bin/termite
+set $TERMINAL /usr/bin/ghostty
 set $BROWSER /usr/bin/firefox
 
 # terminal

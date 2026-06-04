@@ -83,6 +83,11 @@ urxvt:
 	ln -vsf ${PWD}/.Xresources ${HOME}/.Xresources
 	xrdb -merge ${HOME}/.Xresources
 
+ghostty:
+	sudo pacman -S --noconfirm ghostty
+	mkdir -p ${HOME}/.config/ghostty
+	ln -vsf ${PWD}/.config/ghostty/config ${HOME}/.config/ghostty/config
+
 termite:
 	yay -S --noconfirm termite
 	mkdir -p ${HOME}/.config/termite
