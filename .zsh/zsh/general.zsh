@@ -6,7 +6,6 @@ autoload -Uz colors && colors
 autoload -Uz promptinit && promptinit
 
 # Disable <C-s>, <C-q>
-unsetopt FLOW_CONTROL
 setopt NO_FLOW_CONTROL
 
 # No beep

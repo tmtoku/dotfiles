@@ -52,11 +52,10 @@ fcitx:
 
 zsh:
 	sudo pacman -S --noconfirm zsh
-	ln -vsf ${PWD}/.zprofile ${HOME}/.zprofile
 	ln -vsf ${PWD}/.zshrc ${HOME}/.zshrc
 	ln -vsf ${PWD}/.zsh ${HOME}/.zsh
 	mkdir -p ${HOME}/.zsh/.zinit
-	#git clone https://github.com/zdharma/zinit.git ${HOME}/.zsh/.zinit/bin
+	git clone https://github.com/zdharma-continuum/zinit.git ${HOME}/.zsh/.zinit/bin
 
 vim:
 	sudo pacman -S --noconfirm gvim
